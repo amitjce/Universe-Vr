@@ -8,10 +8,14 @@
 
 <body>
     <a-scene background="color:blue">
+        <a-entity oculus-touch-controls="hand: left"></a-entity>
+<a-entity oculus-touch-controls="hand: right"></a-entity>
         <a-sky src="./pics/8k_stars_milky_way.jpg">
         </a-sky>
-        <a-camera position="2 10.8 15 "></a-camera>
-        <a-sphere radius="6" position="-15 2.8 -50" wireframe="true" src="./pics/8k_sun.jpg">
+       <a-entity position="0 20 20">
+        <a-camera user-height="1.6 "></a-camera>
+       </a-entity> 
+        <a-sphere radius="6" position="-15 2.8 -50" wireframe="false" src="./pics/8k_sun.jpg">
             <!-- <a-light type="directional" color="yellow" position="-15 2.8 -50" intensity="10 "></a-light> -->
         </a-sphere>
         <a-sphere radius="1" position="-4 2.8 -9" wireframe="false" src="./pics/8k_mercury.jpg"></a-sphere>
@@ -21,7 +25,7 @@
         <a-sphere radius="5" position="34 7.8 -40" wireframe="false" src="./pics/8k_jupiter.jpg"></a-sphere>
         <a-sphere radius="4" position="24 8.8 -50" wireframe="false" src="./pics/8k_saturn.jpg"></a-sphere>
         <a-sphere radius="3" position="14 9.8 -60" wireframe="false" src="./pics/2k_uranus.jpg"></a-sphere>
-        <a-sphere radius="3" position="4 10.8 -70" wireframe="false" src="./pics/2k_neptune.jpg"></a-sphere>
+        <a-sphere radius="3" position="0 10.8 -70" wireframe="false" src="./pics/2k_neptune.jpg"></a-sphere>
 
 
     </a-scene>
