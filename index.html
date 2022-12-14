@@ -53,6 +53,11 @@
             ></a-asset-item>
         </a-assets>
         <a-entity gltf-model="#names" ></a-entity>
+        <a-assets>
+            <a-asset-item id="ring" src="./pics/saturn rig.glb"  
+            ></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="#ring" ></a-entity>
         <!-- <a-text value="1. Mercury" position="-12.982 4.95123 -12.04058" width="20" color="white"
             animation="property: rotation; to: 0 360 0; dur: 13000; easing: linear; loop: true; "></a-text> -->
         <a-sphere radius="30" position="-15 2.8 -50" wireframe="false" src="./pics/8k_sun.jpg">
@@ -63,15 +68,18 @@
             animation="property: rotation; to: 0 360 0; dur: 13000; easing: linear; loop: true; "
             src="./pics/8k_mercury.jpg">
         </a-sphere>
-        <a-entity position="2 2.13 -3.10935">
+      
             <!-- <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="1000"></a-animation> -->
-            <a-sphere radius="2.5" position="2 0 0" wireframe="false" src="./pics/8k_venus_surface.jpg"></a-sphere>
-        </a-entity>
+            <a-sphere radius="2.5" position="2 2.13 -3.10935" wireframe="false"
+            animation="property: rotation; to: 0 360 0; dur: 13000; easing: linear; loop: true; "
+            src="./pics/8k_venus_surface.jpg"></a-sphere>
+       
 
         <!-- <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"> -->
         <a-sphere radius="2" position="16.8713 1.21 6.22433" wireframe="false"
+        animation="property: rotation; to: 0 360 0; dur: 13000; easing: linear; loop: true; "
             src="./pics/8k_earth_daymap.jpg"></a-sphere>
-        </a-entity>
+      
         <a-sphere radius="1" position="37.4444 1.98 8.03201" wireframe="false"
             animation="property: rotation; to: 0 360 0; dur: 10000; loop: true; " src="./pics/8k_mars.jpg"></a-sphere>
         <a-sphere radius="5" position="63.54152 3.63 -0.83332" wireframe="false"
@@ -107,7 +115,7 @@
 
 
 
-<a-sphere radius="1" position="-10.79185 3.44219 -11.88186" wireframe="false"
+<!-- <a-sphere radius="1" position="-10.79185 3.44219 -11.88186" wireframe="false"
     animation="property: rotation; to: 360 0 0; dur: 5000; loop: NaN; dir: alternate" src="./pics/8k_mercury.jpg"
     material="" geometry="">
 </a-sphere>
@@ -124,11 +132,7 @@
 <a-sphere radius="3" position="114.75223 6.75948 -88.4865" wireframe="false" src="./pics/2k_uranus.jpg" material=""
     geometry=""></a-sphere>
 <a-sphere radius="3" position="66.17169 7.48931 -139.06747" wireframe="false" src="./pics/2k_neptune.jpg" material=""
-    geometry=""></a-sphere>
+    geometry=""></a-sphere> -->
 
-oculus-touch-controls="hand: right; orientationOffset: [object Object]"
-
-
-oculus-thumbstick-controls=""
 
 
